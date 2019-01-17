@@ -1,96 +1,91 @@
-!DOCTYPE html>
-<html lang="en" >
+<!DOCTYPE html>
+  <html lang="en" >
 
-<head>
-  <meta charset="UTF-8">
-  <title>Wikipedia Viewer</title>
-  
-  
-  
-      <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8">
+    <title>Wikipedia Viewer</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
 
-  
-</head>
+  <body>
 
-<body>
+    <div id='initial'><a id='rand' href="https://en.wikipedia.org/wiki/Special:Random">Click here for a random article</a>
 
-  <div id='initial'><a id='rand' href="https://en.wikipedia.org/wiki/Special:Random">Click here for a random article</a>
+    <br>
+    <form onsubmit=" search(); return false;">
+      <input type="search" placeholder="Search" id="mySearch" name="q" aria-label="Search for a specified Wikipedia article."/> 
+    </form>
+    </div>
+    <h1 class='text'id='searchName'></h1>
+    <div class='link'>
+      <a id='20' href=''>
+        <h2 class='text' id='0'></h2>
+        <p class='text' id='10'></p>
+      </a>
+    </div>
+    <div class='link'>
+      <a id='21' href=''>
+        <h2 class='text' id='1'></h2>
+        <p class='text' id='11'></p>
+      </a>
+    </div>
+    <div class='link'>
+      <a  id='22' href=''>
+        <h2 class='text' id='2'></h2>
+        <p class='text' id='12'></p>
+      </a>
+    </div>
+    <div class='link'>
+      <a id='23' href=''>
+      <h2 class='text' id='3'></h2>
+      <p class='text' id='13'></p>
+      </a>
+    </div>
+    <div class='link'>
+      <a id='24' href=''>
+        <h2 class='text' id='4'></h2>
+        <p class='text' id='14'></p>
+      </a>
+    </div>
+    <div class='link'>
+      <a id='25' href=''>
+        <h2 class='text' id='5'></h2>
+        <p class='text' id='15'></p>
+      </a>
+    </div>
+    <div class='link'>
+      <a id='26' href=''>
+        <h2 class='text' id='6'></h2>
+        <p class='text' id='16'></p>
+      </a>
+    </div>
+    <div class='link'>
+      <a id='27' href=''>
+        <h2 class='text' id='7'></h2>
+        <p class='text' id='17'></p>
+      </a>
+    </div>
+    <div class='link'>
+      <a id='28' href=''>
+        <h2 class='text' id='8'></h2>
+        <p class='text' id='18'></p>
+      </a>
+    </div>
+    <div class='link'>
+      <a id='29' href=''>
+        <h2 class='text' id='9'></h2>
+        <p class='text' id='19'></p>
+      </a>
+    </div>
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
 
-<br>
-<form onsubmit=" search(); return false;">
-  <input type="search" placeholder="Search" id="mySearch" name="q" aria-label="Search for a specified Wikipedia article."/> 
-</form>
-</div>
-<h1 class='text'id='searchName'></h1>
-<div class='link'>
-  <a id='20' href=''>
-    <h2 class='text' id='0'></h2>
-    <p class='text' id='10'></p>
-  </a>
-</div>
-<div class='link'>
-  <a id='21' href=''>
-    <h2 class='text' id='1'></h2>
-    <p class='text' id='11'></p>
-  </a>
-</div>
-<div class='link'>
-  <a  id='22' href=''>
-    <h2 class='text' id='2'></h2>
-    <p class='text' id='12'></p>
-  </a>
-</div>
-<div class='link'>
-  <a id='23' href=''>
-  <h2 class='text' id='3'></h2>
-  <p class='text' id='13'></p>
-  </a>
-</div>
-<div class='link'>
-  <a id='24' href=''>
-    <h2 class='text' id='4'></h2>
-    <p class='text' id='14'></p>
-  </a>
-</div>
-<div class='link'>
-  <a id='25' href=''>
-    <h2 class='text' id='5'></h2>
-    <p class='text' id='15'></p>
-  </a>
-</div>
-<div class='link'>
-  <a id='26' href=''>
-    <h2 class='text' id='6'></h2>
-    <p class='text' id='16'></p>
-  </a>
-</div>
-<div class='link'>
-  <a id='27' href=''>
-    <h2 class='text' id='7'></h2>
-    <p class='text' id='17'></p>
-  </a>
-</div>
-<div class='link'>
-  <a id='28' href=''>
-    <h2 class='text' id='8'></h2>
-    <p class='text' id='18'></p>
-  </a>
-</div>
-<div class='link'>
-  <a id='29' href=''>
-    <h2 class='text' id='9'></h2>
-    <p class='text' id='19'></p>
-  </a>
-</div>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+      
 
-  
-
-    <script  src="index.js"></script>
+        <script  src="index.js"></script>
 
 
 
 
-</body>
+  </body>
 
 </html>
